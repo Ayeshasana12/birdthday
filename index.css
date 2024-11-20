@@ -1,0 +1,60 @@
+* {
+    transition: all 0.2s ease-in-out;
+  }
+  body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .card {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .img {
+    animation: img 6s ease 0s infinite normal none;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .card h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  .card p {
+    font-size: 1.2rem;
+    color: #171616;
+  }
+  .card .muted {
+    font-size: 1rem;
+    color: #171616;
+    margin-top: 10px;
+  }
+  
+
+
+/* Animastion */
+
+@keyframes img {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
